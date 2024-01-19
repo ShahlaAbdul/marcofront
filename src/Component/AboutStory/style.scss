@@ -1,0 +1,99 @@
+.about{
+    padding: 4rem 0px;
+    max-width: 100%;
+    width: 70%;
+    margin:  0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 0px;
+    .about_left{
+        max-width: 49%;
+        min-width: 450px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        // padding-right: 20px;
+        p{
+            color: gray;
+            font-size: 14px;
+            }
+    }
+    .about_right{
+        max-width: 48%;
+        width: 500px;
+        max-height: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (max-width: 992px) {
+    .about{
+        display: flex !important;
+        flex-direction: column !important;
+        width: 80% !important;
+        align-items: start !important;
+        gap: 50px !important;
+        .about_left{
+        // display: flex;
+        // flex-direction: column;
+        // gap: 20px;
+        // padding-right: 20px;
+        p{
+            color: gray;
+            font-size: 14px;
+            }
+    }
+        .about_right{
+            max-width: 70%;
+        }
+    }
+
+    
+}
+@media only screen and (max-width: 600px) {
+.about{
+        //  width: 80% !important;
+        // align-items: start !important;
+        // gap: 100px !important;
+        .about{
+            min-width: 100% !important;
+            p{
+                width: 100% !important;
+            }
+        }
+        .about_left{
+          min-width: 400px;
+            border: 2px solid gray !important;
+            p{
+                width: 100% !important;
+            }
+        }
+        .about_right{
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 340px) {
+.about{
+        //  width: 80% !important;
+        // align-items: start !important;
+        // gap: 100px !important;
+        .about{
+            max-width: 100% !important;
+            // justify-content: center;
+        }
+        .about_left{
+          min-width: 300px;
+          max-width: 100% !important;
+          margin:  0 auto !important;
+            // border: 2px solid gray !important;
+            p{
+                width: 100% !important;
+            }
+        }
+    }
+}

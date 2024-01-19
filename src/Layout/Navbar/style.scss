@@ -1,0 +1,52 @@
+nav {
+    
+
+  .navbar {
+    background-color: rgba(53, 46, 46, 0.553);
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    min-height: 45px;
+    .navbar_pages {
+      max-width: 50%;
+      height: auto;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li{
+        padding: 10px;
+      }
+      .page {
+        color: white;
+        &:hover {
+          color: #f42f2c;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (max-width: 992px) {
+  .navbar_pages {
+    max-width: 80% !important;
+    display:none !important  ;
+  }
+}
+  @media only screen and (max-width: 600px) {
+    .navbar_pages {
+        min-height: 20vh !important;
+        height:  auto !important;
+        flex-direction: column !important;
+        
+        li{
+            width: 100%;
+            border-bottom: 1px solid white;
+        }
+  }
+    }
+@media only screen and (min-width: 1200px) {
+}

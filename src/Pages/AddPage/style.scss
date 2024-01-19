@@ -1,0 +1,22 @@
+.addpage{
+    max-width: 100%;
+    min-height: 70vh;
+    padding: 6rem 0px;
+}
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

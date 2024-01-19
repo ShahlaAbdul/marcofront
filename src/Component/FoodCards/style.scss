@@ -1,0 +1,140 @@
+#foodcard {
+  max-width: 100%;
+  background-color: #f9f9ff;
+  padding: 3rem 0px;
+
+  .foodcards {
+    max-width: 70%;
+    margin: 0 auto;
+    .foodcards_head {
+      padding: 5rem 0px;
+      width: 100%;
+      justify-content: center;
+      // align-items: center;
+      text-align: center;
+      p {
+        color: gray;
+      }
+      h1 {
+        font-size: 36px;
+      }
+    }
+    .cards_filter {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border-radius: 10px;
+      li {
+        display: flex;
+        align-items: center;
+        padding: 32px 50px;
+        min-width: 10%;
+        &:hover {
+          background-color: #f42f2c;
+          color: #fff;
+        }
+      }
+      .all {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        // color: red;
+      }
+      .buffet {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+    }
+    .search {
+      width: 300px;
+      height: 40px;
+      margin: 20px 0px;
+      input {
+        outline: none;
+        width: 100%;
+        height: 100%;
+      padding: 0 20px;
+
+      }
+    }
+        .foodcards_cards {
+        padding: 2rem 0;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        gap: 20px;
+        .foodcards_card {
+            max-width: 500px;
+            padding: 20px 30px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 10px;
+            ul {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            .card_head {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span {
+                font-weight: bold;
+                color: #f42f2c;
+                font-size: 20px;
+                }
+            }
+            .card_icons {
+                display: flex;
+                gap: 20px;
+                font-size: 18px;
+                i:hover {
+                color: #f42f2c;
+                }
+            }
+            }
+        }
+        }
+  }
+}
+
+
+@media only screen and (min-width: 600px) {
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+    
+     .cards_filter {
+        display: none !important;
+      max-width: 90% !important;
+      li {
+        padding: 20px 40px !important;
+        max-width: 17% !important;
+        justify-content: center;
+      }
+    }
+        .foodcards_cards {
+        grid-template-columns: auto !important;
+        .foodcards_card {
+            max-width: 100% !important;
+            
+        }
+        }
+
+}
+@media only screen and (max-width: 370px) {
+.foodcards_cards {
+        grid-template-columns: auto !important;
+        .foodcards_card {
+            align-items: center !important;
+            .card_head{
+                flex-direction: column !important;
+               
+            }
+            max-width: 90% !important;
+            
+        }
+        }
+}
+
+

@@ -1,0 +1,48 @@
+.delicious {
+  max-width: 100%;
+  min-height: 90vh;
+  background-image: url("https://preview.colorlib.com/theme/marco/img/hero-bg.jpg.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  .delicious_head {
+    top: 100px;
+    left: 20%;
+    // position: absolute;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80vh;
+    color: #fff;
+    gap: 30px;
+    h1 {
+      font-size: 50px;
+      font-weight: bolder;
+    //   font-family: "Noto Sans", sans-serif;
+      font-family: "Poppins", sans-serif;
+    }
+    p {
+      max-width: 530px;
+    }
+    
+  }
+}
+@media only screen and (max-width: 600px) {
+  
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (max-width: 992px) {
+    .delicious_head{
+        width: 80% !important;
+    }
+}
+  @media only screen and (max-width: 600px) {
+  h1{
+        font-size: 30px !important;
+    }  
+}
+@media only screen and (min-width: 1200px) {
+}
